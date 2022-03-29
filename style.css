@@ -7,3 +7,103 @@
 }
 
 /* Write CSS code below */
+      /* Left Part */
+      .main-content {
+        min-height: 1000px;
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 300px 700px;
+      }
+      .left-section {
+        grid-column: span 1;
+        background-color: black;
+      }
+      .left-content {
+        padding: 1rem;
+      }
+      .profile-image {
+        display: block;
+        margin: auto;
+        border: 5px white solid;
+        border-radius: 30%;
+        width: 60%;
+      }
+      .name {
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 0.8rem;
+        color: aliceblue;
+        text-transform: uppercase;
+        letter-spacing: 0.02px;
+      }
+      .designation {
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 0.5rem;
+        color: aliceblue;
+      }
+      .description {
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 1rem;
+        color: aliceblue;
+      }
+      .social-media {
+        color: aliceblue;
+      }
+      .skills {
+        font-size: 0.75rem;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        color: aliceblue;
+      }
+      .skill-name {
+        font-size: 0.65rem;
+        font-weight: 0.65rem;
+        text-align: left;
+        padding-bottom: 0.5rem;
+      }
+      .progress-bar {
+        border: 1px white solid;
+        height: 4px;
+      }
+
+      /* Right Part */
+
+      .right-section {
+        grid-column: span 1 / span 2;
+        background-color: aqua;
+      }
+      .right-main-content {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+      .right-title{
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 0.5rem;
+        letter-spacing: 1px;
+      }
+
+      /* Media Queries  */
+      @media screen and (max-width: 630px) {
+        .main-content{
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 673px) {
+        .main-content {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
